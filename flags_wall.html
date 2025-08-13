@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>flags_wall</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.css"/>
+  <style>
+    html, body, #osd { height: 100%; margin: 0; background: #111; }
+  </style>
+</head>
+<body>
+  <div id="osd"></div>
+  <script>
+    OpenSeadragon({
+      id: "osd",
+      prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/",
+      tileSources: "flags_wall.dzi",
+      showNavigator: true,
+      navigatorAutoFade: false,
+      animationTime: 0.9,
+      blendTime: 0.1,
+      maxZoomPixelRatio: 2.0,
+      minZoomImageRatio: 0.1
+    });
+  </script>
+</body>
+</html>
